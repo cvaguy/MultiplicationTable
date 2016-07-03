@@ -206,6 +206,9 @@ class ViewController: UIViewController {
         {
             answerButtonMap[value.tag] = index
         }
+        
+        reciteField.userInteractionEnabled = false
+        equationField.userInteractionEnabled = false
     }
 
     override func didReceiveMemoryWarning() {
