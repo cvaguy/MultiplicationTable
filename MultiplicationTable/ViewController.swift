@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var equationField: UITextField!
     @IBOutlet var answerButtons: Array<UIButton> = []
     @IBOutlet var edgeButtons : Array< UIButton > = []
-   
+    @IBOutlet weak var soundSwitch: UISwitch!
     
     var audioPlayer : AVAudioPlayer? = nil
     
@@ -161,7 +161,7 @@ class ViewController: UIViewController {
             audioPlayer!.currentTime = 0
         }
     
-        let audioEnable = false
+        let audioEnable = soundSwitch.on
         
         if(!audioEnable)
         {
