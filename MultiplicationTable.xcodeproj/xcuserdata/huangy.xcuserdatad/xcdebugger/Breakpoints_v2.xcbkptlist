@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MultiplicationTable/ViewController.swift"
-            timestampString = "489167330.677658"
+            timestampString = "489276766.823583"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "158"
-            endingLineNumber = "158"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
             landmarkName = "answerButtonAction(_:)"
             landmarkType = "5">
          </BreakpointContent>

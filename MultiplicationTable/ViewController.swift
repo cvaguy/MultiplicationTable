@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var equationField: UITextField!
     @IBOutlet var answerButtons: Array<UIButton> = []
     @IBOutlet var edgeButtons : Array< UIButton > = []
-    @IBOutlet weak var soundSwitch: UISwitch!
+    @IBOutlet weak var soundButton: UIButton!
     
     var audioPlayer : AVAudioPlayer? = nil
     
@@ -47,6 +47,17 @@ class ViewController: UIViewController {
         88 : "8864", 89 : "8972",
         99 : "9981"
     ]
+    
+    @IBAction func soundButtonPushed(sender: UIButton) {
+        if( sender.titleLabel!.text == "Sound" )
+        {
+            soundButton.setTitle("No Sound", forState: .Normal)
+        }
+        else
+        {
+            soundButton.setTitle("Sound", forState: .Normal)
+        }
+    }
     
     @IBAction func clearButtonPushed(sender: UIButton) {
         //print( "clear button pushed")
@@ -161,7 +172,7 @@ class ViewController: UIViewController {
             audioPlayer!.currentTime = 0
         }
     
-        let audioEnable = soundSwitch.on
+        let audioEnable = soundButton.titleLabel!.text == "Sound"
         
         if(!audioEnable)
         {
